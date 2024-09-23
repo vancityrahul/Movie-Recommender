@@ -18,7 +18,6 @@ class Processor:
         try:
             embeddings = await Actor.parallel_processor(query, genre)
             vectors = np.concatenate([embeddings["one_hot_embeddings"], embeddings["hf_embeddings"]])
-            print("yes")
             hits =await Config.client.search(
                 collection_name="movies_vectors",
                 with_vectors=False,

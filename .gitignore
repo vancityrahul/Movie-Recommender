@@ -1,2 +1,4 @@
 venv
 *.pyc
+backend/system.yaml
+.idea/
