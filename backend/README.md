@@ -43,8 +43,7 @@ This project is actively being developed, with more features and functionalities
    ```
     Install the required packages:
    ```bash
-    python3 -m venv env
-    source env/bin/activate
+    pip install -r requirements.txt
     ```
 3. **Run the API**:
 
