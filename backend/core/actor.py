@@ -24,7 +24,6 @@ class Actor:
                 Utility.one_hot_encode_genre(genre),
                 Utility.get_embedding(query)
             )
-            print(results)
             embd = {
                 "one_hot_embeddings": results[0],
                 "hf_embeddings": results[1]
